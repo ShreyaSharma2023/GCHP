@@ -292,12 +292,10 @@ contains
         DST_ID = MAM, SRC_ID = ACHEM, __RC__  )
 #else
 
-#if 0 
      CALL MAPL_AddConnectivity ( GC, &
         SRC_NAME  = (/'SO2_MAM        ', 'SO2_MAM        ', 'SO2_MAM        ', 'SO2_MAM        ', 'SO2_MAM        ', 'SO2_MAM        '/), &
         DST_NAME  = (/'SO2            ', 'H2SO4          ', 'NH3            ', 'SOA_GAS        ', 'pSO4_aq        ', 'pNH4_aq        '/), &
         DST_ID = MAM, SRC_ID = CHEM, __RC__  )
-#endif
 #endif
 
      call MAPL_TimerAdd(GC, name="RUN", RC=STATUS)
