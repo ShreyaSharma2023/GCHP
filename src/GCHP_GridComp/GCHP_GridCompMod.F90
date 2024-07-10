@@ -293,8 +293,16 @@ contains
 #else
 
      CALL MAPL_AddConnectivity ( GC, &
-        SRC_NAME  = (/'SO2_MAM        ', 'SO2_MAM        ', 'SO2_MAM        ', 'SO2_MAM        ', 'SO2_MAM        ', 'SO2_MAM        '/), &
-        DST_NAME  = (/'SO2            ', 'H2SO4          ', 'NH3            ', 'SOA_GAS        ', 'pSO4_aq        ', 'pNH4_aq        '/), &
+        SRC_NAME  = (/'SO2_MAM        ', 'SO2_MAM        ', 'SO2_MAM        ', 'SO2_MAM        ', 'SO2_MAM        ', 'SO2_MAM        ',   &
+                      'SO2_MAM        ', 'SO2_MAM        ', 'SO2_MAM        ', 'SO2_MAM        ', 'SO2_MAM        ', 'SO2_MAM        ',   &     
+                      'SO2_MAM        ', 'SO2_MAM        ', 'SO2_MAM        ', 'SO2_MAM        ', 'SO2_MAM        ', 'SO2_MAM        ',   &
+                      'SO2_MAM        ', 'SO2_MAM        ', 'SO2_MAM        ', 'SO2_MAM        ', 'SO2_MAM        ', 'SO2_MAM        ',   &
+                      'SO2_MAM        ', 'SO2_MAM        ', 'SO2_MAM        ', 'SO2_MAM        ', 'SO2_MAM        ', 'SO2_MAM        '/), &
+        DST_NAME  = (/'SO2            ', 'H2SO4          ', 'NH3            ', 'SOA_GAS        ', 'pSO4_aq        ', 'pNH4_aq        ',   &
+                      'DDT_DMS_gas    ', 'DDT_MSA_gas    ', 'DDT_SO2_gas    ', 'DDT_H2SO4_gas  ', 'DDT_NH3_gas    ', 'DDT_SOA_GAS_gas',   &
+                      'DDT_DMS_aq     ', 'DDT_MSA_aq     ', 'DDT_SO2_aq     ', 'DDT_H2SO4_aq   ', 'DDT_NH3_aq     ', 'DDT_SOA_GAS_aq ',   &
+                      '_DMS_gas       ', '_MSA_gas       ', '_SO2_gas       ', '_H2SO4_gas     ', '_NH3_gas       ', '_SOA_GAS_gas   ',   &
+                      '_DMS_aq        ', '_MSA_aq        ', '_SO2_aq        ', '_H2SO4_aq      ', '_NH3_aq        ', '_SOA_GAS_aq    '/), &
         DST_ID = MAM, SRC_ID = CHEM, __RC__  )
 #endif
 
