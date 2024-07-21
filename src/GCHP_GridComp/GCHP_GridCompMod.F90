@@ -419,7 +419,10 @@ contains
     
     call MAPL_GridCompGetFriendlies(GCS(CHEM), "DYNAMICS", BUNDLE, RC=STATUS )
     _VERIFY(STATUS)
-    
+   
+    call MAPL_GridCompGetFriendlies(GCS(MAM), "DYNAMICS", BUNDLE, RC=STATUS )
+    _VERIFY(STATUS)
+ 
     ! Count tracers
     !--------------
     call ESMF_FieldBundleGet(BUNDLE,FieldCount=NUM_TRACERS, RC=STATUS)
