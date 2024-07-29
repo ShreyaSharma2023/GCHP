@@ -293,7 +293,7 @@ contains
 #else
 
      CALL MAPL_AddConnectivity ( GC, &
-        SRC_NAME  = (/'SO2_MAM2        ', 'H2SO4_MAM       ', 'NH3_MAM         ', 'SOA_MAM         ', 'SO2_MAM         ', 'SO2_MAM         ',   &
+        SRC_NAME  = (/'SO2_MAM2        ', 'H2SO4_MAM       ', 'NH3_MAM         ', 'SOA_MAM         ', 'H2SO4_PRDR_MAM  ', 'SO2_MAM         ',   &
                       'SO2_MAM         ', 'SO2_MAM         ', 'SO2_MAM         ', 'SO2_MAM         ', 'SO2_MAM         ', 'SO2_MAM         ',   &     
                       'SO2_MAM         ', 'SO2_MAM         ', 'SO2_MAM         ', 'SO2_MAM         ', 'SO2_MAM         ', 'SO2_MAM         ',   &
                       'SO2_MAM         ', 'SO2_MAM         ', 'SO2_MAM         ', 'SO2_MAM         ', 'SO2_MAM         ', 'SO2_MAM         ',   &
